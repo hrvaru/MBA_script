@@ -4,7 +4,11 @@ Create_Studentlist ()
 {
 read -p "Enter master file name:" a
 head $a
+<<<<<<< HEAD
+read -p "Select the course id column and subject name column. Separate it by comma:" b
+=======
 read -p "Select the column to sort the data:" b
+>>>>>>> 650ff5e5610ab7d47d4ea76c9429d8724836bf18
 
 clear
 	echo "############### Sorting the data on basis of column ########################"
@@ -63,9 +67,15 @@ Response ()
 	
 Count ()
 {
+<<<<<<< HEAD
+		echo "1] Create Student list:"
+		echo "2] Exit the script:"
+		echo "Which option do you want to select:"
+=======
 		echo "1] Create Student list"
 		echo "2] Exit the script"
 		echo "Select the option"
+>>>>>>> 650ff5e5610ab7d47d4ea76c9429d8724836bf18
 		read z
 		case $z in
 			1) Create_Studentlist
